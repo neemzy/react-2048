@@ -1,0 +1,24 @@
+{
+  "browserify": {
+    "transform": [
+      "babelify"
+    ]
+  },
+  "scripts": {
+    "build": "browserify src/app.js -o public/app.js",
+    "test": "babel-node --presets node6 node_modules/.bin/jasmine-node tests"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.16.0",
+    "babel-plugin-transform-object-rest-spread": "^6.16.0",
+    "babel-preset-latest": "^6.16.0",
+    "babel-preset-node6": "^11.0.0",
+    "babel-preset-react": "^6.16.0",
+    "babelify": "^7.3.0",
+    "browserify": "^13.1.0",
+    "fbemitter": "^2.1.1",
+    "jasmine-node": "^1.14.5",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2"
+  }
+}
